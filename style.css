@@ -1,0 +1,127 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+}
+
+.grid-container{
+    background: linear-gradient(90deg, rgba(182,181,181,1) 0%, rgba(238,238,238,1) 47%, rgba(216,216,216,1) 100%);
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 2fr 1fr 1fr 2fr 2fr 2fr 2fr  ;
+    grid-template-columns: 12% 9% 6% 5% 9% 9% 9% 9% 5% 6% 9% 12%;
+    grid-template-areas: 
+    ' . . . . . . . . . . . .  '
+    ' . . . . . blu blu  . . . . .  '
+    ' . . . gree gree blu blu pur pur . . .  '
+    ' . yell yell gree gree cen cen pur pur re re .  '
+    ' . . mag mag mag cen cen cy cy cy . .  '
+    ' . . . . ora ora bur bur . . . .  '
+    ' . . . . . . . . . . . .  ' ;
+    
+}
+
+.cards{
+    background: black;
+    border: 4px solid white;
+    color: white;
+    
+}
+
+.yellow{
+    background:linear-gradient(90deg, rgba(247,212,22,1) 0%, rgba(255,255,39,1) 100%);
+    grid-area: yell;
+    
+}
+
+.yellow:active{
+    grid-area: cen;
+    z-index: 10;
+}
+
+.blue{
+    background: linear-gradient(90deg, rgba(14,102,226,1) 0%, rgba(39,230,255,1) 100%);
+    grid-area: blu;
+}
+
+.blue:active{
+    grid-area: cen;
+    z-index: 10;
+}
+
+.green{
+    background:linear-gradient(90deg, rgba(1,159,42,1) 0%, rgba(138,255,126,1) 100%);
+    grid-area: gree;
+
+}
+
+.green:active{
+    grid-area: cen;
+    z-index: 10;
+}
+
+.purple{
+    background: linear-gradient(90deg, rgba(70,25,168,1) 0%, rgba(124,82,233,1) 100%);
+    grid-area: pur;
+}
+
+.purple:active{
+    grid-area: cen;
+    z-index: 10;
+}
+.red{
+    background: linear-gradient(90deg, rgba(166,10,10,1) 0%, rgba(240,91,91,1) 100%);
+    grid-area: re;
+
+}
+
+.red:active{
+    grid-area: cen;
+    z-index: 10;
+}
+
+.orange{
+    background: linear-gradient(90deg, rgba(228,118,1,1) 0%, rgba(250,172,16,1) 100%);
+    grid-area: ora;
+}
+
+.orange:active{
+    grid-area: cen;
+    z-index: 10;
+}
+
+.center{
+    grid-area: cen;
+}
+
+.cyan{
+    background: linear-gradient(90deg, rgba(1,190,228,1) 0%, rgba(16,250,219,1) 100%);
+    grid-area: cy;
+}
+
+.cyan:active{
+    grid-area: cen;
+    z-index: 10;
+}
+
+.magenta{
+    background: linear-gradient(90deg, rgba(189,7,144,1) 0%, rgba(252,85,202,1) 100%);
+    grid-area: mag;
+}
+
+.magenta:active{
+    grid-area: cen;
+    z-index: 10;
+}
+.burgundy{
+    background: linear-gradient(90deg, rgba(82,2,12,1) 0%, rgba(145,15,24,1) 100%);
+    grid-area: bur;
+}
+
+.burgundy:active{
+    grid-area: cen;
+    z-index: 10;
+}
+
+
+}
